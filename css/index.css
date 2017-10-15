@@ -1,4 +1,9 @@
 /*navigation bar*/
+@media only screen and (min-width:850px){
+    .navTitle>a{
+        font-size: 18px !important;
+    }
+} 
 .dropdownNav {
     display: none;
 }
@@ -13,4 +18,21 @@
     text-align: center;
     border-bottom:1px solid black;
     line-height: 40px;
+}
+.navTitle>a {
+    color: white !important;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 11px;
+}
+.mainNav>ul>li:hover{
+    background-color:#4c047a;
+    transition: 0.3s all ease;
+}
+.active>a{
+    background-color:#3f254f !important;
+}
+.mainNav>ul>li>a{
+    color:white !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:1.3em;
 }
