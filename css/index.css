@@ -1,0 +1,16 @@
+/*navigation bar*/
+.dropdownNav {
+    display: none;
+}
+.dropdownNav>ul{
+    list-style-type: none;
+    width:100%;
+    background:#043687;
+    padding-left:0px;
+}
+.dropdownNav>ul>li{
+    width: 100%;
+    text-align: center;
+    border-bottom:1px solid black;
+    line-height: 40px;
+}
