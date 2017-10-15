@@ -19,6 +19,16 @@
     border-bottom:1px solid black;
     line-height: 40px;
 }
+.dropdownNav>ul>li:hover{
+    background-color:#4c047a;
+    transition: 0.3s all ease;    
+}
+.dropdownNav>ul>li>a {
+    color:white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:1.3em;
+    text-decoration: none;
+}
 .navTitle>a {
     color: white !important;
     font-family: 'Syncopate', sans-serif;
