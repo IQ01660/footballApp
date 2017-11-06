@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Syncopate" rel="stylesheet">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/register.css">
     <title>Football App</title>
 </head>
 <body>
@@ -31,8 +32,8 @@
                     <li><a href="#">Championship</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
+                    <li class="active"><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li class=""><a href="login.html"><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
                 </ul>
             </div>
         </div>
@@ -55,9 +56,25 @@
         	    <div class="form-wrap">
                 <h1>Log in with your email account</h1>
                     <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                     <div class="form-group">
+                            <label for="Name" class="sr-only">Name</label>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Name">
+                        </div>
+                         <div class="form-group">
+                            <label for="Surname" class="sr-only">Surname</label>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Surname">
+                        </div>
+                         <div class="form-group">
+                            <label for="Age" class="sr-only">Age</label>
+                            <input type="date" name="email"  max="1980-12-31" id="email" class="form-control" placeholder="Age">
+                        </div>
                         <div class="form-group">
                             <label for="email" class="sr-only">Email</label>
                             <input type="email" name="email" id="email" class="form-control" placeholder="somebody@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="key" class="sr-only">Password</label>
+                            <input type="password" name="key" id="key" class="form-control" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <label for="key" class="sr-only">Password</label>
@@ -67,10 +84,8 @@
                             <span class="character-checkbox" onclick="showPassword()"></span>
                             <span class="label">Show password</span>
                         </div>
-                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
+                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Sign Up">
                     </form>
-                    <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
-                    <hr>
         	    </div>
     		</div> <!-- /.col-xs-12 -->
     	</div> <!-- /.row -->
@@ -99,65 +114,7 @@
 	</div> <!-- /.modal-dialog -->
 </div> <!-- /.modal -->
 
-<!--FOOTER-->
-    <!--<div class="container-fluid">-->
-    <section style="height:80px;"></section>
-	<div class="row" style="text-align:center;">
-	</div>
-    <!----------- Footer ------------>
-    <footer class="footer-bs">
-        <div class="row">
-        	<div class="col-md-3 footer-brand animated fadeInLeft">
-            	<h2>Logo</h2>
-                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                <p>© 2014 BS3 UI Kit, All rights reserved</p>
-            </div>
-        	<div class="col-md-4 footer-nav animated fadeInUp">
-            	<h4>Menu —</h4>
-            	<div class="col-md-6">
-                    <ul class="pages">
-                        <li><a href="#">Travel</a></li>
-                        <li><a href="#">Nature</a></li>
-                        <li><a href="#">Explores</a></li>
-                        <li><a href="#">Science</a></li>
-                        <li><a href="#">Advice</a></li>
-                    </ul>
-                </div>
-            	<div class="col-md-6">
-                    <ul class="list">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        	<div class="col-md-2 footer-social animated fadeInDown">
-            	<h4>Follow Us</h4>
-            	<ul>
-                	<li><a href="#">Facebook</a></li>
-                	<li><a href="#">Twitter</a></li>
-                	<li><a href="#">Instagram</a></li>
-                	<li><a href="#">RSS</a></li>
-                </ul>
-            </div>
-        	<div class="col-md-3 footer-ns animated fadeInRight">
-            	<h4>Newsletter</h4>
-                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
-                <p>
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search for...">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-                      </span>
-                    </div><!-- /input-group -->
-                 </p>
-            </div>
-        </div>
-    </footer>
-    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="#">Ikram and Zamin</a></p></section>
 
-<!--</div>-->
 <!--**************-->
     <!--The JS Scripts-->
     <!--**************-->
@@ -167,5 +124,6 @@
   crossorigin="anonymous"></script>
     <script src="js/login.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/register.js"></script>
 </body>
 </html>
